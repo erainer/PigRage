@@ -50,15 +50,15 @@ class Sprites: SKNode{
     var chickenJump2 = "ChickenJump_02"
     
     var animChickenDeath = [SKTexture]()
-    var chickenDeath1 = "Chicken_Death01"
-    var chickenDeath2 = "Chicken_Death02"
-    var chickenDeath3 = "Chicken_Death03"
-    var chickenDeath4 = "Chicken_Death04"
-    var chickenDeath5 = "Chicken_Death05"
-    var chickenDeath6 = "Chicken_Death06"
-    var chickenDeath7 = "Chicken_Death07"
-    var chickenDeath8 = "Chicken_Death08"
-    var chickenDeath9 = "Chicken_Death09"
+    var chickenDeath1 = "ChickenDeath_01"
+    var chickenDeath2 = "ChickenDeath_02"
+    var chickenDeath3 = "ChickenDeath_03"
+    var chickenDeath4 = "ChickenDeath_04"
+    var chickenDeath5 = "ChickenDeath_05"
+    var chickenDeath6 = "ChickenDeath_06"
+    var chickenDeath7 = "ChickenDeath_07"
+    var chickenDeath8 = "ChickenDeath_08"
+    var chickenDeath9 = "ChickenDeath_09"
     
     //Dog
     var dog = SKSpriteNode()
@@ -147,9 +147,6 @@ class Sprites: SKNode{
         
         //Run
         animDog.append(SKTexture(imageNamed: dog1))
-//        animDog.append(SKTexture(imageNamed: dog2))
-//        animDog.append(SKTexture(imageNamed: dog3))
-//        animDog.append(SKTexture(imageNamed: dog4))
         //Death
         animDogDeath.append(SKTexture(imageNamed: dogDeath1))
         animDogDeath.append(SKTexture(imageNamed: dogDeath2))

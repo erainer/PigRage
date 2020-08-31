@@ -20,11 +20,6 @@ struct PhysicsCategory{
     static let none : UInt32 = 0
     static let all: UInt32 = UInt32(UInt.max)
     static let playerCategory: UInt32 = 0x1 << 1
-    
-
-//    static let pigSignCategory: UInt32 = 0x1 << 3
-    
-
 
     //Enemies Physics Category
     static let foxCategory: UInt32 = 0x1 << 2
@@ -32,11 +27,7 @@ struct PhysicsCategory{
     static let dogCategory: UInt32 = 0x1 << 4
     static let chickenCategory: UInt32 = 0x1 << 5
     static let moleCategory: UInt32 = 0x1 << 6
-//    //Platforms Category
-    //static let hay1Category: UInt32 = 0x1 << 3
-//    static let hay2Category: UInt32 = 0x1 << 11
-//    static let deckCategory: UInt32 = 0x1 << 12
-    
+
     //Items Categoru
     static let powerUpCategory: UInt32 = 0x1 << 7
     static let pigSignCategory: UInt32 = 0x1 << 8
@@ -45,13 +36,6 @@ struct PhysicsCategory{
     static let pigAmmoCategory3: UInt32 = 0x1 << 11
     static let pigAmmoCategory4: UInt32 = 0x1 << 12
     static let pigAmmoCategory5: UInt32 = 0x1 << 13
-    
-//    static let leftSidePlatCategory: UInt32 = 0x1 << 10
-//    static let rightSidePlatCategory: UInt32 = 0x1 << 11
-//    static let topSidePlatCategoryCategory: UInt32 = 0x1 << 12
-    
-    
-    
 }
 
 

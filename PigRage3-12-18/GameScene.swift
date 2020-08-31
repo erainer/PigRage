@@ -154,18 +154,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     func initEnemies(){
-        enemies.createEnemy(image: enemy1, type: .FOX, xPos: 4500, yPos: 225)
-        enemies.createEnemy(image: enemy2, type: .CHICKEN, xPos: 3500, yPos: 225)
-        enemies.createEnemy(image: enemy3, type: .FARMER, xPos: 5000, yPos: 300)
+        enemies.createEnemy(image: enemy1, type: .FOX, xPos: 4800, yPos: 225)
+        enemies.createEnemy(image: enemy2, type: .CHICKEN, xPos: 8000, yPos: 225)
+        enemies.createEnemy(image: enemy3, type: .FARMER, xPos: 7000, yPos: 300)
         enemies.createEnemy(image: enemy4, type: .DOG, xPos: 6000, yPos: 175)
         enemies.createEnemy(image: enemy5, type: .MOLE, xPos: 7500, yPos: 300)
         
         items.createItem(image: item1, type: .PIGSIGN, xPos: 1300, yPos: 300)
         items.createItem(image: item2, type: .TOXIC, xPos: 2500, yPos: 300)
-        
-//        platforms.createPlatform(image: platform1, platformType: .HAY1, xPos: 2500, yPos: 125)
-//        platforms.createPlatform(image: platform2, platformType: .DECK, xPos: 3500, yPos: 350)
-//        platforms.createPlatform(image: platform3, platformType: .HAY2, xPos: 4500, yPos: 300)
     }
     
     func updateState(state: State){

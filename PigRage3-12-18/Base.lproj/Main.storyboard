@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jb4-PX-Ieb">
-    <device id="retina4_7" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jb4-PX-Ieb">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="BOMBFONT TRIAL.otf">
             <string>BOMBFONT</string>
-        </array>
-        <array key="PingFang.ttc">
-            <string>PingFangHK-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -30,50 +24,45 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PigRage_Options" translatesAutoresizingMaskIntoConstraints="NO" id="QZ9-31-Cox">
                                 <rect key="frame" x="-6" y="-128" width="684" height="503"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HCg-qp-HpE">
-                                <rect key="frame" x="18" y="111" width="172.5" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Programmer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9u-g2-BnR">
-                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="42"/>
-                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Emily Rainer" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-W6-zst">
-                                        <rect key="frame" x="14" y="72" width="145" height="35"/>
-                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="25"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-9p-nBg">
-                                <rect key="frame" x="20" y="19" width="80" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cla-TF-4w5">
+                                <rect key="frame" x="16" y="15" width="71" height="52"/>
                                 <fontDescription key="fontDescription" name="BOMBFONT" family="BOMB FONT" pointSize="35"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="Jb4-PX-Ieb" kind="show" id="QmV-Bu-vGS"/>
+                                    <segue destination="Jb4-PX-Ieb" kind="show" id="tIO-7m-eG4"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qBh-Ka-jFv">
-                                <rect key="frame" x="536" y="111" width="75" height="107"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbl-rb-XJC">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="42"/>
-                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bob" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-Kf-icK">
-                                        <rect key="frame" x="0.0" y="72" width="75" height="35"/>
-                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="25"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ0-m1-E1z">
-                                <rect key="frame" x="305" y="0.0" width="168" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emily Rainer" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-W6-zst">
+                                <rect key="frame" x="19" y="185" width="145" height="35"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbl-rb-XJC">
+                                <rect key="frame" x="535" y="108" width="75" height="41"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Former TJC Students" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-Kf-icK">
+                                <rect key="frame" x="502" y="184" width="142" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="0Ec-rl-XhY"/>
+                                    <constraint firstAttribute="width" constant="142" id="Nv9-34-ene"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programmer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9u-g2-BnR">
+                                <rect key="frame" x="18" y="108" width="172.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="46U-d5-oiT"/>
+                                    <constraint firstAttribute="width" constant="172.5" id="8EL-vK-s6n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ0-m1-E1z">
+                                <rect key="frame" x="258" y="1" width="151" height="49.5"/>
                                 <fontDescription key="fontDescription" name="BOMBFONT" family="BOMB FONT" pointSize="43"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,16 +70,27 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="Nbl-rb-XJC" firstAttribute="top" secondItem="Pen-Re-LOX" secondAttribute="top" constant="108" id="05v-5o-BAB"/>
                             <constraint firstItem="QZ9-31-Cox" firstAttribute="bottom" secondItem="Pen-Re-LOX" secondAttribute="bottom" id="43W-r1-T3D"/>
                             <constraint firstAttribute="trailing" secondItem="QZ9-31-Cox" secondAttribute="trailing" constant="-11" id="5fs-Qm-a3W"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="qBh-Ka-jFv" secondAttribute="bottom" constant="200" id="Ydp-7P-Ddy"/>
-                            <constraint firstItem="qBh-Ka-jFv" firstAttribute="top" secondItem="yJp-01-yTz" secondAttribute="topMargin" constant="68" id="b7m-qL-cXx"/>
+                            <constraint firstItem="5Kx-Kf-icK" firstAttribute="top" secondItem="Nbl-rb-XJC" secondAttribute="bottom" constant="35" id="9M0-Fd-OOf"/>
+                            <constraint firstItem="Cla-TF-4w5" firstAttribute="leading" secondItem="Pen-Re-LOX" secondAttribute="leading" constant="16" id="9h2-sV-P0l"/>
+                            <constraint firstItem="Cla-TF-4w5" firstAttribute="top" secondItem="Pen-Re-LOX" secondAttribute="top" constant="15" id="Cdr-5P-j79"/>
+                            <constraint firstItem="Pen-Re-LOX" firstAttribute="bottom" secondItem="5Kx-Kf-icK" secondAttribute="bottom" constant="100" id="IiI-zH-aGy"/>
+                            <constraint firstItem="tJ0-m1-E1z" firstAttribute="centerX" secondItem="yJp-01-yTz" secondAttribute="centerX" id="K1D-lG-t4k"/>
+                            <constraint firstItem="Pen-Re-LOX" firstAttribute="trailing" secondItem="5Kx-Kf-icK" secondAttribute="trailing" constant="23" id="KTv-sy-w4D"/>
+                            <constraint firstItem="EcC-W6-zst" firstAttribute="top" secondItem="a9u-g2-BnR" secondAttribute="bottom" constant="35" id="M3Q-U6-L4T"/>
+                            <constraint firstItem="EcC-W6-zst" firstAttribute="leading" secondItem="Pen-Re-LOX" secondAttribute="leading" constant="19" id="W26-oS-VPJ"/>
+                            <constraint firstItem="Pen-Re-LOX" firstAttribute="trailing" secondItem="Nbl-rb-XJC" secondAttribute="trailing" constant="57" id="YTx-F5-T0H"/>
                             <constraint firstItem="QZ9-31-Cox" firstAttribute="leading" secondItem="yJp-01-yTz" secondAttribute="leading" constant="-6" id="ckQ-db-qeV"/>
+                            <constraint firstItem="a9u-g2-BnR" firstAttribute="leading" secondItem="Pen-Re-LOX" secondAttribute="leading" constant="18" id="dMN-9h-0zI"/>
                             <constraint firstItem="QZ9-31-Cox" firstAttribute="top" secondItem="yJp-01-yTz" secondAttribute="top" constant="-128" id="dxb-fE-Ffg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qBh-Ka-jFv" secondAttribute="trailing" constant="33" id="fSB-UW-9gt"/>
+                            <constraint firstItem="a9u-g2-BnR" firstAttribute="top" secondItem="Pen-Re-LOX" secondAttribute="top" constant="108" id="m6m-Wo-ckt"/>
+                            <constraint firstItem="tJ0-m1-E1z" firstAttribute="top" secondItem="Pen-Re-LOX" secondAttribute="top" constant="1" id="mQ6-5h-9Cj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pen-Re-LOX"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hw5-VN-e38"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7g-pC-uAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,6 +162,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pl1-qJ-wkW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="n6I-Sa-bFH"/>
                     <connections>
                         <outlet property="creditsBtn" destination="IXg-UH-fha" id="J8a-Cx-BD7"/>
                         <outlet property="optionsBtn" destination="cGq-qt-DBb" id="tk5-sv-ezf"/>
@@ -190,91 +191,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGX-Kd-cpX">
-                                <rect key="frame" x="192" y="100" width="83" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound Effects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJX-tl-0F6">
-                                <rect key="frame" x="78" y="157" width="197" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KR-al-DMp">
-                                <rect key="frame" x="145" y="214" width="130" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color Blind" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afV-Gh-eVQ">
-                                <rect key="frame" x="120" y="272" width="155" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7x-CD-mdD">
-                                <rect key="frame" x="442" y="97" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="+"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jC-5P-Sd5">
-                                <rect key="frame" x="556" y="97" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="-"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhU-bx-RjA">
-                                <rect key="frame" x="442" y="160" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="+"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbN-bT-daI">
-                                <rect key="frame" x="556" y="160" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="-"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBb-XZ-hBQ">
-                                <rect key="frame" x="442" y="233" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="+"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-HV-3ng">
-                                <rect key="frame" x="556" y="233" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="-"/>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-OB-qeD">
-                                <rect key="frame" x="498" y="292" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chr-Xs-LHp">
-                                <rect key="frame" x="512" y="98" width="19" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05X-fL-SFk">
-                                <rect key="frame" x="512" y="160" width="19" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2e-BN-VNa">
-                                <rect key="frame" x="512" y="234" width="19" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo7-iG-L6f">
                                 <rect key="frame" x="20" y="29" width="78" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -284,12 +200,56 @@
                                     <segue destination="Jb4-PX-Ieb" kind="show" id="3De-IC-NZQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56R-Fb-gHQ">
-                                <rect key="frame" x="207" y="322" width="289" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGX-Kd-cpX">
+                                <rect key="frame" x="189" y="137" width="83" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="15"/>
-                                <state key="normal" title="Credits to Salt Queen for the  pig ass."/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound Effects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJX-tl-0F6">
+                                <rect key="frame" x="75" y="194" width="197" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7x-CD-mdD">
+                                <rect key="frame" x="439" y="129" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="-"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jC-5P-Sd5">
+                                <rect key="frame" x="553" y="129" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhU-bx-RjA">
+                                <rect key="frame" x="439" y="192" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="-"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbN-bT-daI">
+                                <rect key="frame" x="553" y="192" width="46" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chr-Xs-LHp">
+                                <rect key="frame" x="509" y="135" width="19" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05X-fL-SFk">
+                                <rect key="frame" x="509" y="197" width="19" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -300,6 +260,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7V7-EE-ygR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jJe-Rv-WAa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dw5-7j-x1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,18 +277,19 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="r63-Iu-q9W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-58" y="46"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tIO-7m-eG4"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="PigRage_Options" width="1024" height="768"/>
         <image name="PigRage_Options2" width="1025" height="769"/>
         <image name="PigRage_Title1" width="1024" height="768"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="QmV-Bu-vGS"/>
-    </inferredMetricsTieBreakers>
 </document>
